@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var number: Int = 5
+    
     var body: some View {
-        Text("Hello, world!")
+        Text("\(number.repeatDigit(n: 3))")
             .padding()
     }
 }
